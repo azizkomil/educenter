@@ -1,4 +1,4 @@
-import 'package:educenter/screens/introduction/login.dart';
+import 'package:educenter/screens/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: LoginScreen(), // Set LoginPage as the home screen
+      home: HomeScreen(), // Set LoginPage as the home screen
     );
   }
 }
