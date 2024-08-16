@@ -1,7 +1,6 @@
-import 'package:educenter/components/buttons/main_button.dart';
-import 'package:educenter/screens/login_page.dart';
+import 'package:educenter/components/main_button.dart';
+import 'package:educenter/screens/introduction/login.dart';
 import 'package:flutter/material.dart';
-import 'package:educenter/screens/authentication.dart';
 
 
 class OnboardingPage extends StatefulWidget {
@@ -26,7 +25,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => LoginPage()),
+                MaterialPageRoute(builder: (context) => LoginScreen()),
               );
             },
             child: Text(
@@ -87,7 +86,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                     if (_currentPage == 2) {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => LoginPage()),
+                        MaterialPageRoute(builder: (context) => LoginScreen()),
                       );
                     } else {
                       _pageController.nextPage(
