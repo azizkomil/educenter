@@ -77,10 +77,15 @@ class _ConfirmOTPScreenRegisterState extends State<ConfirmOTPScreenRegister> {
       setState(() {
         _otpError = null; // Clear any previous errors
       });
-      // Navigate to the home screen
-      Navigator.push(
+      // Navigate to the login screen with a success message
+      Navigator.pushAndRemoveUntil(
         context,
-        MaterialPageRoute(builder: (context) => LoginScreen()),
+        MaterialPageRoute(
+          builder: (context) => LoginScreen(
+            successMessage: 'Siz ro\'yxatdan muvaffaqiyatli o\'tdingiz, iltimos, akkauntingizga kiring!',
+          ),
+        ),
+        (route) => false,
       );
     }
   }

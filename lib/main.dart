@@ -1,4 +1,5 @@
 import 'package:educenter/screens/home.dart';
+import 'package:educenter/screens/introduction/intro.dart';
 import 'package:flutter/material.dart';
 
 void main() {

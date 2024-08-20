@@ -31,7 +31,7 @@ class AuthHeader extends StatelessWidget {
               children: [
                 Text(
                   '''Kiberxavfsizlik
-Markzai''',
+Markazi''',
                   style: TextStyle(
                     fontSize: 30, 
                     color: Color(0xFF112299),
